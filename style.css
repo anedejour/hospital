@@ -1,0 +1,92 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background: whitesmoke;
+}
+.navbar-brand{
+    max-width: 100%;
+    height: 50px;
+    height: aut;
+}
+.navbar-brand img {
+    max-width: 100%;
+    height: 50px;
+    height: aut;
+}
+.nav-link{
+    font-size: 16px;
+    color: black!important;
+}
+.d-block{
+    max-width: 100%;
+    height: 500px;
+    height: aut;
+    margin-top: 50px;
+    position: relative;
+}
+.carousel-caption{
+    color:white;
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.relacaoMedicos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+.relacaoMedicos h2{
+    font-size: 24px;
+}
+.titulo{
+    font-weight: bold;
+    list-style: none;
+}
+.estiloLista{
+    list-style: none;
+    padding: 5px;
+}
+.estiloLista:nth-child(even){
+    background: green;   
+}
+@media (max-width: 768px) {
+    .d-block {
+    height: 300px;
+    }
+}
+@media (max-width: 375px) {
+    .d-block {
+    height: 200px;
+    }
+}
+.card-title{
+    background: whitesmoke;
+    text-align: center;
+
+}
+.card{
+    border-style: none;
+    margin-top: 50px;
+}
+.accordion{
+    margin-top: 50px;
+}
+#formBt{
+    color: green;
+}
+.card-header{
+    background: whitesmoke;
+}
+#selecionarArea{
+    font-weight: bold;
+}
+#formTrabConosco{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}

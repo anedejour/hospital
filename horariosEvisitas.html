@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80148cb8f8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Inicial</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="inicial.html"><img src="img/hospital.png" alt="logo hospital"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="corpoMedico.html">Corpo Médico </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="convenios.html">Convênios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="horariosEvisitas.html">Horários e Visitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trabalheConosco.html">Trabalhe Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="accordion" id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#acompanhantes" aria-expanded="true"
+                        aria-controls="acompanhantes" id="formBt">
+          Acompanhantes
+        </button>
+                </h2>
+            </div>
+
+            <div id="acompanhantes" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Donec suscipit laoreet nisi, ut pulvinar dolor ornare finibus. Phasellus ac porttitor purus. Suspendisse eget dignissim quam.
+                    Nulla id massa mi. Sed vestibulum imperdiet massa, eu sollicitudin libero sodales a. In faucibus convallis
+                    egestas. Etiam interdum, eros ac tincidunt facilisis, sem neque feugiat risus, ut tempor massa quam cursus
+                    nulla. Donec dignissim eu elit in imperdiet. Pellentesque in sapien lectus. Morbi purus orci, commodo
+                    vel dui eget, ultricies dictum nunc. Phasellus dapibus est ac blandit pharetra. Sed maximus elit sagittis
+                    erat venenatis mollis bibendum at quam.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#visitantes"
+                        aria-expanded="false" aria-controls="visitantes" id="formBt">
+          Visitantes
+        </button>
+                </h2>
+            </div>
+            <div id="visitantes" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Proin auctor nibh vitae ultrices tempor. Mauris scelerisque nunc quis tellus rhoncus sollicitudin. Sed placerat accumsan
+                    vehicula. Ut commodo ipsum id porta gravida. Praesent mattis odio sed magna molestie, nec pretium nulla
+                    consequat. Etiam ligula mauris, tincidunt non pretium sit amet, molestie et nulla. Vivamus feugiat ultricies
+                    augue, vitae sodales nunc. Suspendisse vitae tellus ut diam eleifend scelerisque sit amet in nisi. Cras
+                    molestie rutrum consectetur.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#boletimMedico"
+                            aria-expanded="false" aria-controls="boletimMedico" id="formBt">
+          Boletim Médico
+        </button>
+                    </h2>
+                </div>
+                <div id="boletimMedico" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        Vestibulum odio lacus, tempor ut erat nec, tempus ullamcorper nulla. Aliquam interdum sem at augue cursus rhoncus. Maecenas
+                        tempor leo magna, non congue enim convallis non. Morbi placerat ultricies tortor et placerat. Nulla
+                        facilisi. Etiam ipsum massa, lacinia at dictum eget, blandit nec lectus. Cras sed consectetur lacus,
+                        nec tincidunt lectus. Suspendisse pulvinar, dolor non cursus ultrices, ante orci interdum ex, sed
+                        ullamcorper leo ex ut libero. Fusce sapien mauris, efficitur at hendrerit nec, hendrerit nec augue.
+                        Integer ultrices vulputate enim, vitae rutrum neque venenatis in. In in ex ligula. Praesent ornare
+                        elementum tortor, quis efficitur lorem tincidunt eu. Aenean dapibus elementum venenatis. Aenean bibendum
+                        eros tellus. Fusce vehicula euismod metus.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#usoDeCelular"
+                            aria-expanded="false" aria-controls="usoDeCelular" id="formBt">
+          Uso de Celular
+        </button>
+                    </h2>
+                </div>
+                <div id="usoDeCelular" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget imperdiet dui, a ornare magna. Integer tincidunt tellus
+                        quis ante laoreet, a feugiat velit bibendum. Pellentesque scelerisque gravida urna a fringilla. Sed
+                        eget convallis lorem. Nullam porttitor nisi at erat scelerisque, at volutpat risus lobortis. Quisque
+                        id eros nec sem imperdiet porta.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

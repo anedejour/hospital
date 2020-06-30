@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/80148cb8f8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Inicial</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="inicial.html"><img src="img/hospital.png" alt="logo hospital"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="corpoMedico.html">Corpo Médico </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="convenios.html">Convênios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="horariosEvisitas.html">Horários e Visitas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trabalheConosco.html">Trabalhe Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 id="formTrabConosco"> Trabalhe Conosco! </h1>
+        <form>
+            <div class="form-group form-row">
+                <div class="col">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="col">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control mascaraCpf" id="cpf">
+                </div>
+            </div>
+            <div class="form-group form-row">
+                <div class="col">
+                    <label for="nascimento">Data de Nascimento</label>
+                    <input type="text" class="form-control mascaraData validaData" id="nascimento">
+                </div>
+                <div class="col">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control mascaraCep" id="cep">
+                </div>
+            </div>
+            <div class="form-group form-row">
+                <div class="col">
+                    <label for="areaDeInteresse">Área de Interesse</label>
+                    <select id="areaDeInteresse" name="areaDeInteresse" class="form-control">
+						<option value="" id="selecionarArea">Selecione a Área de Interesse</option>
+                        <optgroup label="Saúde">
+							<option value="Enfermeiro">Enfermeiro</option>
+							<option value="Médico">Médico</option>
+							<option value="Técnico">Técnico de Enfermagem</option>
+							<option value="RX">Técnico Radiologia</option>
+                        </optgroup>
+                        <optgroup label="Geral">
+							<option value="Auxiliar">Auxliar de Limpeza</option>
+							<option value="Atendimento">Atendimento</option>
+							<option value="Faturamento">Faturamento</option>
+                        </optgroup>
+                        </select>
+                </div>
+                <div class="col">
+                    <label for="pretensao">Pretensão Salarial</label>
+                    <input type="text" class="form-control mascaraDinheiroReal" id="pretensao">
+                </div>
+            </div>
+                <button type="submit" class="btn btn-info"><i class="far fa-paper-plane"></i> Enviar</button>
+        </form>
+        </div>
+
+        <script src="js/plugins/jquery.mask.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
